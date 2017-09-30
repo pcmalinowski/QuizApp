@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="ISO-8859-1">
+<title>The Office Trivia Quiz</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+<link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+<header>
+	<h1> Welcome and Good Morning</h1>
+</header>
+
+<main> 
+
+	<div class= "quiz-box">
+
+		<div class="button-style">
+			<button id="start-button" class=""> Start!</button>
+		</div>
+
+		<section>
+		<form id="questions-list">
+			<label class='answer'>
+            <input type="radio" name="answerSelect" required>
+            <span></span>
+          </label>
+          <label class='answer'>
+            <input type="radio" name="answerSelect" required>
+            <span></span>
+          </label>
+          <label class='answer'>
+            <input type="radio" name="answerSelect" required>
+            <span></span>
+          </label>
+          <label class='answer'>
+            <input type="radio" name="answerSelect" required>
+            <span></span>
+          </label>
+          <button id="submit-choice" type="submit">Submit!</button>
+        </form>
+		</section>
+		<div>
+			<div class= "js-quiz-results"></div>
+			<div>
+			<button id= "restart-quiz" class="hidden"> RESTART</button>
+			</div>
+		</div>
+	</div>
+
+</main>
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+</body>
+</html>

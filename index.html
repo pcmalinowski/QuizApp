@@ -4,14 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Office Trivia Quiz</title>
+<link href="https://www.fontify.me/wf/7a90d76a78feecea37b464bb82e56ebe" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
 <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
 
-<header>
-	<h1> Abandon all hope ye who enter here.</h1>
+<header role="banner">
+	<h1> ABANDON ALL HOPE YE WHO ENTER HERE</h1>
+  <img class="five" src="https://i.giphy.com/media/5wWf7H89PisM6An8UAU/200.webp" alt="Micheal Scott from the office, wanting something explained to him like he were 5 years old.">
 </header>
 
 <main role="main"> 
@@ -23,8 +25,8 @@
 		</div>
 
 		<section id="quiz-text" class="question hidden">
-      <h2 class="js-question-text"></h2>
-      <form id="questions-list">
+      <h2 class="js-question"></h2>
+      <form id="questions-list" role="search">
 			    <label class='answer'>
             <input type="radio" name="answerSelect" required>
             <span></span>
@@ -43,11 +45,10 @@
           </label>
           <button id="submit-choice" type="submit">Submit!</button>
       </form>
+        <div class="answer-feedback">
+          <h3 class="answer-text"></h3>
+        </div>
 		</section>
-
-    <div class="answer-feedback">
-      <h3 class="answer-text"></h3>
-    </div>
 
 		<div>
 			<div class= "js-quiz-results"></div>
@@ -60,6 +61,6 @@
 
 </main>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="./index.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>

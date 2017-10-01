@@ -17,12 +17,18 @@ button {
   	border: 1px solid white;
   	color: yellow;
   	background-color: black;
-
 }
 
 body {
-	font-family: ;
-	color: black;
+	font-family: font158359;
+	background-color: blue;
+}
+
+.five{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
 }
 
 .hidden{
@@ -30,11 +36,11 @@ body {
 }
 .quiz-box {
 		border: 5px solid black;
-		border-radius: 2px;
+		border-radius: 6px;
 		background-color: red;
 		width: auto;
 		padding: 10px;
-		margin: 0 auto 0 auto;
+		margin: 0 20px 0 20px;
 }
 
 .answer {

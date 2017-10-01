@@ -1,6 +1,7 @@
 $(function () {
   startQuiz();
   handleAnswerSubmitted();
+  renderQuestionFeedback();
   findQuestion();
 });
 
@@ -84,7 +85,7 @@ function findQuestion() {
 function creatQuestionText() {
   var changeHTML = '<span>(' + (choose.questionList + 1) + '/' + choose.questions.length + ')</span>'
   var questionText = choose.questions[choose.questionList].question;
-  $('.js-question-text').html(changeHTML + questionText);
+  $('.js-question').html(changeHTML + questionText);
 }
 
 function renderQuestionChoices(answers) {
@@ -127,14 +128,15 @@ function renderQuestionFeedback(boolean) {
   if (boolean == true){
     feedback.find('h3').text('Yeshhh!');
   } else if (boolean == false){
-    feedback.find('h3').text('Toby, you are the worst.');
+    var bingo = choose.questions[choose.questionList].rightAnswer
+    feedback.find(`h3`).text(`Toby, you are the worst. The correct answer was ${bingo}.`);
   } else if (boolean == 'unanswered'){
     feedback.find('h3').text('I will just wait till everyone goes home to make a decision.');
   }
 }
 
 function renderFinalResults() {
-  $('quiz-text').addClass('hidden');
+  $('#quiz-text').addClass('hidden');
   $('#restart-quiz').removeClass('hidden');
   var element = $('.js-quiz-results');
   element.html('<h2>' + 'You answered ' + choose.numberRight + ' of ' + choose.questions.length + ' right!' + '</h2>');

@@ -1,7 +1,56 @@
-*{
+* {
 	box-sizing: border-box;
+}
+h1 {
+	margin-top: 150px;
+	color: red;
+	text-align: center;
+}
+
+h2 {
+	margin: 20px;
+}
+
+button {
+	padding: 10px;
+  	border-radius: 3px;
+  	border: 1px solid white;
+  	color: yellow;
+  	background-color: black;
+
+}
+
+body {
+	font-family: ;
+	color: black;
 }
 
 .hidden{
 	display: none;
+}
+.quiz-box {
+		border: 5px solid black;
+		border-radius: 2px;
+		background-color: red;
+		width: auto;
+		padding: 10px;
+		margin: 0 auto 0 auto;
+}
+
+.answer {
+	margin: 10px;
+	background-color: yellow;
+	padding: 10px;
+	display: block;
+	color: black;
+}
+
+#start-button {
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+
+.button-style {
+	text-align: center;
 }

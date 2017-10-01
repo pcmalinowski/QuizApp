@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="ISO-8859-1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Office Trivia Quiz</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
 <link rel="stylesheet" href="main.css">
@@ -10,10 +11,10 @@
 <body>
 
 <header>
-	<h1> Welcome and Good Morning</h1>
+	<h1> Abandon all hope ye who enter here.</h1>
 </header>
 
-<main> 
+<main role="main"> 
 
 	<div class= "quiz-box">
 
@@ -21,9 +22,10 @@
 			<button id="start-button" class=""> Start!</button>
 		</div>
 
-		<section>
-		<form id="questions-list">
-			<label class='answer'>
+		<section id="quiz-text" class="question hidden">
+      <h2 class="js-question-text"></h2>
+      <form id="questions-list">
+			    <label class='answer'>
             <input type="radio" name="answerSelect" required>
             <span></span>
           </label>
@@ -40,18 +42,24 @@
             <span></span>
           </label>
           <button id="submit-choice" type="submit">Submit!</button>
-        </form>
+      </form>
 		</section>
+
+    <div class="answer-feedback">
+      <h3 class="answer-text"></h3>
+    </div>
+
 		<div>
 			<div class= "js-quiz-results"></div>
-			<div>
+			<div class="button-style">
 			<button id= "restart-quiz" class="hidden"> RESTART</button>
 			</div>
 		</div>
+
 	</div>
 
 </main>
-  <script src="//code.jquery.com/jquery.min.js"></script>
-  <script type="text/javascript" src="index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="./index.js"></script>
 </body>
 </html>
